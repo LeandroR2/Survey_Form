@@ -1,0 +1,155 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta chartset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Satisfaction Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 id="title">Customer Satisfaction Survey Form</h1><p id="description">Thank you for helping us improve our quality of Venezuelan food services.</p>
+      </div>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+          <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter your email" /></label>
+          <label id="number-label" for="number" >Age: <input id="number" name="number" type="number" min="13" max="100" placeholder="Enter your Age" /></label>
+          <label>Profession/Occupation
+            <select id="dropdown" name="occupation" required >
+              <option value="" >Select an option</option>
+              <option value="1" >Student</option>
+              <option value="2" >Professional</option>
+              <option value="3" >Prefer not to say</option>
+              <option value="4" >Other</option>
+            <select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend our services to a friend?</legend>
+          <label><input class="input-radio" name="recommend" type="radio" value="definitely" checked/> Definitely</label>
+          <label><input class="input-radio" name="recommend" type="radio" value="maybe" /> Maybe</label>
+          <label><input class="input-radio" name="recommend" type="radio" value="notsure" /> Not Sure</label>
+        </fieldset>
+          <label>What is your favorite dish on our menu?
+            <select>
+              <option value="" >Select an option</option>
+              <option value="1" >Empanadas</option>
+              <option value="2" >Arepas</option>
+              <option value="3" >Pasteles Andinos</option>
+              <option value="4" >Patacon</option>
+            <select>
+          </label>
+        <fieldset>
+          <legend>What would you like to enjoy on our menu? (Check all the ones you want)</legend>
+            <label><input class="input-checkbox" type="checkbox" value="merluza" /> Merluza al ajillo</label>
+            <label><input class="input-checkbox" type="checkbox" value="pollo" /> Pollo Frito</label>
+            <label><input class="input-checkbox" type="checkbox" value="pabellon" /> Pabellon Criollo</label>
+            <label><input class="input-checkbox" type="checkbox" value="parrilla" /> Parrilla</label>
+            <label><input class="input-checkbox" type="checkbox" value="ensalada" /> Ensalada de Gallina</label>
+            <label><input class="input-checkbox" type="checkbox" value="hallacas" /> Hallacas</label>
+        </fieldset>
+          <label for="comments">Your comments are valuable to us!
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+        <div>
+            <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+
+
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+@media (min-width: 480px) {
+form {
+    padding: 2.5rem;
+  }
+}
+.container {
+  width: 100%;
+  margin: 3.125rem auto 0 auto;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  background-color: #023020;
+  color: #f5f6f7;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+#description {
+  font-style: italic;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;;
+  width: 100%;
+  min-height: 2em;
+}
+
+form {
+  background-color: rgb(156, 98, 22);
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  border-radius: 0.45rem;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  color: white;
+  background-color: #4CBB17;
+  border-color: #4CBB17;
+  border-radius: 6px;
+  min-width: 300px;
+}
+
+.input-radio, 
+.input-checkbox {
+  width: unset;
+  margin: 0;
+  vertical-align: middle;
+  display: inline;
+}
+
+
+
+
+** end of undefined **
+

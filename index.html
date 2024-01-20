@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta chartset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Customer Satisfaction Survey Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1 id="title">Customer Satisfaction Survey Form</h1><p id="description">Thank you for helping us improve our quality of Venezuelan food services.</p>
+      </div>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label" for="name">Name: <input id="name" name="name" type="text" required placeholder="Enter your name"/></label>
+          <label id="email-label" for="email">Email: <input id="email" name="email" type="email" required placeholder="Enter your email" /></label>
+          <label id="number-label" for="number" >Age: <input id="number" name="number" type="number" min="13" max="100" placeholder="Enter your Age" /></label>
+          <label>Profession/Occupation
+            <select id="dropdown" name="occupation" required >
+              <option value="" >Select an option</option>
+              <option value="1" >Student</option>
+              <option value="2" >Professional</option>
+              <option value="3" >Prefer not to say</option>
+              <option value="4" >Other</option>
+            <select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Would you recommend our services to a friend?</legend>
+          <label><input class="input-radio" name="recommend" type="radio" value="definitely" checked/> Definitely</label>
+          <label><input class="input-radio" name="recommend" type="radio" value="maybe" /> Maybe</label>
+          <label><input class="input-radio" name="recommend" type="radio" value="notsure"/> Not Sure</label>
+        </fieldset>
+          <label>What is your favorite dish on our menu?
+            <select>
+              <option value="" >Select an option</option>
+              <option value="1" >Empanadas</option>
+              <option value="2" >Arepas</option>
+              <option value="3" >Pasteles Andinos</option>
+              <option value="4" >Patacon</option>
+            <select>
+          </label>
+        <fieldset>
+          <legend>What would you like to enjoy on our menu? (Check all the ones you want)</legend>
+            <label><input class="input-checkbox" type="checkbox" value="merluza" /> Merluza al ajillo</label>
+            <label><input class="input-checkbox" type="checkbox" value="pollo" /> Pollo Frito</label>
+            <label><input class="input-checkbox" type="checkbox" value="pabellon" /> Pabellon Criollo</label>
+            <label><input class="input-checkbox" type="checkbox" value="parrilla" /> Parrilla</label>
+            <label><input class="input-checkbox" type="checkbox" value="ensalada" /> Ensalada de Gallina</label>
+            <label><input class="input-checkbox" type="checkbox" value="hallacas" /> Hallacas</label>
+        </fieldset>
+          <label for="comments">Your comments are valuable to us!
+            <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here..."></textarea>
+          </label>
+        <div>
+            <input id="submit" type="submit" value="Submit" />
+        </div>
+      </form>
+    </div>
+  </body>
+
+
+</html>
